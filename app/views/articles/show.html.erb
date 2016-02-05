@@ -1,7 +1,7 @@
-<h2 align="center description"> Title: <%= @article.title %> </h2>
+<h2 align="center" class="description">Title: <%= @article.title %></h2>
 
 <div class="well col-xs-8 col-xs-offset-2">
-  <h4 class="center"><strong>Description: </strong></h4>
+  <h4><strong>Description</strong></h4>
   <hr>
   <%= simple_format(@article.description) %>
   <div class="article-actions">
@@ -9,5 +9,5 @@
     <%= link_to 'View all articles', articles_path, class: "btn btn-success btn-xs" %>
     <%= link_to 'Delete this article', article_path(@article), method: :delete,
         data: {confirm: "Are you sure you want to delete the article?"}, class: "btn btn-danger btn-xs" %>
-  </div>w
+  </div>
 </div>
